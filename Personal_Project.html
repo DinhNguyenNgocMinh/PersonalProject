@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Bố cục ảnh và chữ</title>
+  <style>
+    .container {
+      display: flex;          /* Kích hoạt flexbox */
+      align-items: center;    /* Căn giữa theo chiều dọc */
+      justify-content: space-between; /* Cách đều hai bên */
+    }
+    .image {
+      flex: 1;                /* Chiếm 1 phần */
+      padding: 10px;
+    }
+    .text {
+      flex: 1;                /* Chiếm 1 phần */
+      padding: 10px;
+    }
+    img {
+      max-width: 100%;        /* Ảnh co giãn theo khung */
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="image">
+      <img src="your-image.jpg" alt="Ảnh minh họa">
+    </div>
+    <div class="text">
+      <h2>Tiêu đề</h2>
+      <p>Đây là đoạn chữ nằm bên cạnh ảnh. Bạn có thể viết nội dung tùy ý.</p>
+    </div>
+  </div>
+</body>
+</html>
